@@ -5,7 +5,7 @@ describe("App initialization", () => {
     cy.get(".todo-list li").should("have.length", 4);
   });
 
-  it("Displays an error on failure", () => {
+  it.only("Displays an error on failure", () => {
     cy.server();
 
     cy.route({

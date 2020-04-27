@@ -20,7 +20,7 @@ describe("Input form", () => {
     it("Adds a new todo on submit", () => {
       const inputText = "Buy eggs";
 
-      cy.route("POSt", "/api/todos", {
+      cy.route("POST", "/api/todos", {
         name: inputText,
         id: 1,
         isComplete: false,
